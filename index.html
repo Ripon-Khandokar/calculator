@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator for calculation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="cal-full-area">
+            <div class="cal-body">
+                <h3>calculate here</h3>
+                <div class="cal-display">
+                    <div class="cal-result">
+                        <span id="display"> </span>
+                    </div>
+                </div>
+                <div class="cal-btn">
+                    <div class="btn-area">            
+                            <button onclick="number(7)" id="seven" >7</button>
+                            <button id="eight" onclick="number(8)">8</button>
+                            <button id="nine" onclick="number(9)">9</button>
+                            <button id="division" onclick="operator('/')">/</button>
+                            <br>
+                            <div class="two">
+                            <button id="six" onclick="number(6)">6</button>
+                            <button id="five" onclick="number(5)">5</button>
+                            <button id="four" onclick="number(4)">4</button>
+                            <button id="mul" onclick="operator('*')">x</button>
+                            <br>
+                            <button id="three" onclick="number(3)">3</button>
+                            <button id="two" onclick="number(2)">2</button>
+                            <button id="one" onclick="number(1)">1</button>
+                            <button id="subs" onclick="operator('-')">-</button>
+                            <br>
+                            <button onclick="clear(0)">c</button>
+                            <button id="zero" onclick="number(0)">0</button>
+                            <button id="equal" onclick="result()">=</button>
+                            <button id="add" onclick="operator('+')">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="main.js"></script>
+</body>
+
+</html>
